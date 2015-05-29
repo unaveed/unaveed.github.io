@@ -48,6 +48,9 @@ a.emphasis:hover {
     font-family: Arial;
     text-align: center;
 }
+.giant a {
+    color: #16A085;
+}
 .nav .nav-link {
     color: #fff;
 }
