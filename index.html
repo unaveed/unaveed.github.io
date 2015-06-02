@@ -1,45 +1,57 @@
 <html>
 <head>
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="bootflat/css/bootflat.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
-	<script type="text/javascript" src="js/main.js"></script>
-	<title>Umair Naveed's blog</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <title>Umair Naveed's blog</title>
 </head>
 <body>
-    <div class="container-fluid mint-2 vstretch">
-        <div class="row">
-            <div class="accent hstretch golden-yellow"></div>
+    <div class="container-fluid">
+        <div class="row mint-1">
+            <nav class="navbar navbar-default navbar-fixed-top mint-1">
+                <div class="row">
+                    <div class="accent hstretch golden-yellow"></div>
+                </div>
+                <div class="container">
+
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <h3 class="big"><a class="navbar-brand" href="#">&lt;un/&gt;</a></h3>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </nav>
         </div>
-        <!-- Header -->
-        <div class="row">
-            <div class="col-xs-6 col-md-4">
-                <h3 class="big"><a href="index.html">&lt;un/&gt;</a></h3>
-            </div>
-            <div class="col-xs-12 col-md-8">
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a class="nav-link" href="http://www.github.com/unaveed">Projects</a></li>
-                        <li><a class="nav-link current" href="#">Blog</a></li>
-                        <li><a class="nav-link" href="#">About</a></li>
-                        <li><a class="nav-link" href="#">Contact</a></li>
-                    </ul>
+    <!--</div>-->
+        <!-- Splash -->
+        <section class="mint-1">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3 mint-1 upper-padding">
+                    <h1 class="skinny dark-gray">Hi, I'm Umair.</h1>
+                    <h1 class="skinny dark-gray">I enjoy creating <span class="emphasis">software.</span></h1>
+                    <h1 class="skinny dark-gray">Take a look at some of my <a href="#projects" class="emphasis">projects</a>,
+                        connect with me on <a href="#connect" class="emphasis">LinkedIn</a> or check out my <a href="#work" class="emphasis">resume</a>.</h1>
                 </div>
             </div>
-        </div>
-        <!-- Splash -->
-        <section>
-        <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
-                <h1 class="skinny dark-gray">Hi, I'm Umair.</h1>
-                <h1 class="skinny dark-gray">I enjoy creating <span class="emphasis">software.</span></h1>
-                <h1 class="skinny dark-gray">Take a look at some of my <a href="#projects" class="emphasis">projects</a>,
-                    connect with me on <a href="#connect" class="emphasis">LinkedIn</a> or check out my <a href="#work" class="emphasis">resume</a>.</h1>
-            </div>
-            <div class="col-md-2"></div>
-        </div>
         </section>
         <section>
             <div class="row">
@@ -47,7 +59,7 @@
                 <div class="col-md-1"></div>
                 <div class="col-md-10">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-xs-12 col-sm-12 col-md-6">
                             <div class="panel panel-info">
                                 <div class="panel-heading">
                                     <h3 class="panel-title">Work 1</h3>
@@ -59,7 +71,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-xs-12 col-sm-12 col-md-6">
                             <div class="panel panel-info">
                                 <div class="panel-heading">
                                     <h3 class="panel-title">Work 2</h3>
@@ -73,7 +85,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-xs-12 col-sm-12 col-md-6">
                             <div class="panel panel-info">
                                 <div class="panel-heading">
                                     <h3 class="panel-title">Work 1</h3>
@@ -85,7 +97,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-xs-12 col-sm-12 col-md-6">
                             <div class="panel panel-info">
                                 <div class="panel-heading">
                                     <h3 class="panel-title">Work 2</h3>

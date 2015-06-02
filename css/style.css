@@ -2,17 +2,38 @@ html, body {
     margin: 0;
     height:100%;
     width:100%;
+    min-width:100%;
     padding:0;
+}
+body {
+    /*padding-top: 60px;*/
+}
+/*@media (max-width: 979px) {*/
+    /*body {*/
+        /*padding-top: 0px;*/
+    /*}*/
+/*}*/
+nav {
+    max-width: 100%;
+    min-width: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 section {
     display: block;
     height:100%;
+    min-width: 100%;
     width:100%;
     padding: 60px;
-    padding-left: 120px;
     box-sizing:border-box;
+    overflow-y: auto;
 }
-/* Styles for text */
+
+/**
+  *
+  *  ----------  Styles for text ----------
+  *
+  **/
 .all-caps {
     text-transform: uppercase;
 }
@@ -23,6 +44,8 @@ section {
     display: block;
     text-decoration: overline;
     color: #16A085;
+    padding: 0;
+    margin: 0;
 }
 .big a {
 	color: #16A085;
@@ -51,42 +74,79 @@ a.emphasis:hover {
 .giant a {
     color: #16A085;
 }
-.nav .nav-link {
-    color: #fff;
+.highlighted  {
+    background-color: #FFA400;
+    color: #48CFAD;
+    border: 5px solid #fff;
+    border-top: none;
 }
-.nav .nav-link:hover {
+#navbar li {
+    color: #d1293a;
+}
+#navbar  li:hover {
     color: #049372;
     background-color: #37BC9B;
     display: inline-block;
     border: 1px solid #fff;
     border-top: none;
 }
-.nav .nav-link:focus {
+#navbar  li:focus {
     background-color: #FFA400;
     color: #049372;
+}
+.navbar-right li {
+    font-size:1.3em;
+}
+.nav-active {
+    color: pink;
+    font-size:0.25em;
 }
 .skinny {
     font-weight: 100;
     text-align: center;
+    word-wrap: break-word;
 }
 
 .skinny.title {
     margin-bottom: 20px;
     padding-bottom: 60px;
 }
-/* Styles for divs */
+/**
+  *
+  * ---------- Styles for divs ----------
+  *
+  **/
 .accent {
     min-height: 4px;
+}
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    max-width: 100%;
+}
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .hstretch {
     width: 100%;
     min-width: 100%;
 }
+.upper-padding {
+    padding-top: 60px;
+}
 .vstretch {
     height: 100%;
     min-height: 100%;
 }
-/*** Colors ***/
+/**
+  *
+  * ---------- Colors ----------
+  *
+  **/
 .carrara {
     background-color: #F2F1EF;
 }
