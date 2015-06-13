@@ -1,0 +1,190 @@
+/* app css stylesheet */
+body {
+  background-color: #E6E9ED;
+}
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+#calendar-container {
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+#calendar-header {
+  border: none;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.calendar-bg  {
+  background-color: #434a54;
+}
+
+.days-of-week {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.panel-default>.panel-heading {
+  background-color: #434a54;
+  color: #ffffff;
+}
+
+.panel a {
+  color: #ffffff;
+}
+
+.week-border {
+  border-bottom: 2px solid #656D78;
+  color: #aab2bd;
+}
+
+.arrow {
+  color: #ffffff;
+}
+
+.footer {
+  margin-top: 20px;
+}
+
+.footer-label {
+  background-color: #ffffff;
+  border-radius: 60px;
+}
+
+.day-display {
+  padding: 2%;
+  border-right: 1px solid #656D78;
+  border-bottom: 1px solid #656D78;
+  font-size: 18px;
+  display: block;
+}
+.day-display .edge {
+  padding: 2%;
+  border-bottom: 1px solid #656D78;
+  font-size: 18px;
+  display: block;
+}
+
+a.day-display {
+  text-decoration: none;
+}
+
+a.day-display:hover {
+  background-color: #97C02F;
+}
+
+.day-active {
+  background-color: #37BC9B;
+}
+
+#footer-today {
+  border-radius: 60px;
+  padding: 10px;
+  margin-top: 10px;
+  bottom: 0px;
+  background-color: #ffffff;
+  color: #434a54;
+}
+
+#footer-today:hover {
+  background-color: #97C02F;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.cal-addon {
+  position: relative;
+}
+
+.cal-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+}
+
+.right-addon .glyphicon {
+  right: 10px;
+}
+
+.right-addon input {
+  padding-right: 20px;
+}
+
+@media (min-width: 768px){
+  .seven-cols .col-md-1,
+  .seven-cols .col-sm-1,
+  .seven-cols .col-lg-1  {
+    width: 100%;
+    *width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .seven-cols .col-md-1,
+  .seven-cols .col-sm-1,
+  .seven-cols .col-lg-1 {
+    width: 14.285714285714285714285714285714%;
+    *width: 14.285714285714285714285714285714%;
+  }
+}
+
+.days {
+  border: 1px solid #000000;
+}
+
+.border {
+  border: 1px solid #000000;
+}
+
+.note {
+  /*position: relative;*/
+  /*width: 30%;*/
+  /*padding: 1em 1.5em;*/
+  /*margin: 2em auto;*/
+  /*color: #fff;*/
+  background: #97C02F;
+  overflow: hidden;
+}
+
+.note:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-width: 0 16px 16px 0;
+  border-style: solid;
+  border-color: #fff #434a54 #658E15 #658E15;
+  background: #658E15;
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+  /* Firefox 3.0 damage limitation */
+  display: block; width: 0;
+}
+
